@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <title>Nerds</title>
+</head>
+
+<body>
+<!-- Навигация -->
+  <header class="main-header">
+    <nav>
+      <!-- логотип -->
+      <a>
+        <img src="https://via.placeholder.com/150x100" alt width="150" height="100">
+      </a>
+      <ul>
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+    
+    <section>
+      <h2>Фильтры для страницы</h2>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Стоиомсть</legend>
+            <input type="range">
+            <label for="cost-from">От</label>
+            <input id="cost-from" type="text">
+            <label for="cost-to">До</label>
+            <input id="cost-to" type="text">
+        </fieldset>
+        
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input id="grid-adaptive" name="product-type-layout" type="radio" value="adaptive">
+              <label for="grid-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input id="grid-fixed" name="product-type-layout" type="radio" value="fixed">
+              <label for="grid-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input id="grid-flexible" name="product-type-layout" type="radio" value="flexible">
+              <label for="grid-flexible">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input id="feature-slider" name="slider" type="checkbox" checked>
+              <label for="feature-slider">Слайдер</label>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <input id="feature-benefits" name="slider" type="checkbox">
+              <label for="feature-benefits">Блок преимуществ</label>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <input id="feature-news" name="news" type="checkbox" checked>
+              <label for="feature-news">Новости</label>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <input id="feature-gallery" name="gallery" type="checkbox">
+              <label for="feature-gallery">Галерея</label>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <input id="feature-basket" name="basket" type="checkbox">
+              <label for="feature-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+    
+    <section>
+      <h2>Список готовых сайтов</h2>
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/150x100" alt="Сайт для туристов - Sedona">
+          <div>
+            <h3>Sedona</h3>
+            <p>Информационный сайт <br> для туристов</p>
+            <button type="button">9 900 <span>₽</span></button>
+          </div>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150x100"  alt="Продуктовая страница мобильного приложения - Pink">
+          <div>
+            <h3>App Pink</h3>
+            <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
+            <button type="button">9 900 <span>₽</span></button>
+          </div>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150x100"  alt="">
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150x100"  alt="">
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150x100"  alt="">
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150x100"  alt="">
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a>1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">Следующая</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="main-footer">
+    <section>
+      <h2>Как нас найти</h2>
+        <!-- Здесь будет карта -->
+    </section>
+    <section>
+      <h3>Наши контакты</h3>
+      <p>NЁRDS DESIGN STUDIO</p>
+      <p> наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург<br>
+      <br>
+      Телефон: <a href="tel:+78005558628">+7 800 555-86-28</a>
+      <a href="#">Напишите нам</a>
+    </p></section>
+    <section>
+    <h2>Давайте дружить!</h2>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <ul>
+      <li>
+        <a href="#">Вконтакте</a>
+      </li>
+      <li>
+        <a href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a href="#">Инстаграм</a>
+      </li>
+    </ul>
+
+  </section>
+</footer>
+
+  <section hidden="">
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label>Ваше имя:
+          <input id="contact-mail" name="mail" type="text" placeholder="Имя Фамилия" required>
+        </label>
+        <label>Ваш email:
+          <input id="contact-name" name="name" type="text" placeholder="email@example.com" required>
+        </label>
+        <label>Текст письма:
+          <textarea id="contact-comment" name="comment" cols="50" rows="3" placeholder="В свободной форме"></textarea>
+        </label>
+        </p><p><input type="submit" value="Отправить">
+      </p>
+    </form>
+    <button id="cancel-contact-form" type="button">Закрыть</button>
+  </section>
+</body>
+</html>
+
+
+
